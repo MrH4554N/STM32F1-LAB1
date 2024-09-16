@@ -94,7 +94,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);  // Toggles the RED LED on PA5
+	  Exercise1();
 	  HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
