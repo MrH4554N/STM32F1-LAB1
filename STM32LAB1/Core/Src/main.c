@@ -87,9 +87,8 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, RESET);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, RESET);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, RESET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
