@@ -21,7 +21,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Core/Src/Ex1.h ../Core/Src/Ex2.h
+ ../Core/Src/Ex1.h ../Core/Src/Ex2.h ../Core/Src/Ex3.h
 
 ../Core/Inc/main.h:
 
@@ -72,3 +72,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Src/Ex1.h:
 
 ../Core/Src/Ex2.h:
+
+../Core/Src/Ex3.h:

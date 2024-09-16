@@ -6,7 +6,7 @@
  */
 
 
-#include "Ex1.h"
+#include "Ex2.h"
 void Exercise2(void){
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, SET);
 	HAL_Delay(5000);

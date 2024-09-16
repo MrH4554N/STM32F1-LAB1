@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "Ex1.h"
 #include "Ex2.h"
+#include "Ex3.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -87,9 +88,23 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, RESET);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, RESET);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, RESET);
+
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, RESET);		//D1
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, RESET);		//V1
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, RESET);		//X1
+
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, RESET);		//D2
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, RESET);		//V2
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, RESET);		//X2
+
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, RESET);		//D1
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, RESET);		//V1
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, RESET);		//X1
+
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, RESET);		//D2
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);		//V2
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);		//X2
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,7 +112,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise2();
+	  Exercise3();
 
     /* USER CODE BEGIN 3 */
   }
