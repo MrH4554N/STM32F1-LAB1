@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "Ex1.h"
+#include "Ex2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -86,7 +87,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, RESET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -95,7 +98,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  Exercise1();
-	  HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
