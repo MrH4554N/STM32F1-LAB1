@@ -6,7 +6,7 @@
  */
 
 
-#include "Ex4.h"
+#include "Ex5.h"
 
 void SegLedDisplayReverse(int num){
 	switch(num){

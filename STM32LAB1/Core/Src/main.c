@@ -27,6 +27,7 @@
 #include "Ex3.h"
 #include "Ex4.h"
 #include "Ex5.h"
+#include "Ex6.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -115,9 +116,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise5(counter);
-	  counter++;
-	  if(counter >= 10) counter = 0;
+	  Exercise6();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
