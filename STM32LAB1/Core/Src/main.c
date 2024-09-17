@@ -31,6 +31,7 @@
 #include "Ex7.h"
 #include "Ex8.h"
 #include "Ex9.h"
+#include "Ex10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -112,7 +113,12 @@ int main(void)
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);		//X2
 
   int counter = 0;
+
   int num = 0;
+
+  int hour = 0;
+  int minute = 0;
+  int second = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -120,7 +126,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise9(num);
+	  Exercise10(hour, minute, second);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
