@@ -22,8 +22,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Ex1.h"
+#include "Ex2.h"
+#include "Ex3.h"
 #include "Ex4.h"
+#include "Ex5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -112,7 +115,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise4(counter);
+	  Exercise5(counter);
 	  counter++;
 	  if(counter >= 10) counter = 0;
     /* USER CODE BEGIN 3 */
