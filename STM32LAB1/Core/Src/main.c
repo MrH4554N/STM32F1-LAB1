@@ -29,6 +29,7 @@
 #include "Ex5.h"
 #include "Ex6.h"
 #include "Ex7.h"
+#include "Ex8.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -110,6 +111,7 @@ int main(void)
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);		//X2
 
   int counter = 0;
+  int num = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,7 +119,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise6();
+	  Exercise8(num);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
