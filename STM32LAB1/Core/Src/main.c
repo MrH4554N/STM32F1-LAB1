@@ -22,9 +22,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "Ex1.h"
-#include "Ex2.h"
-#include "Ex3.h"
+
+#include "Ex4.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +55,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int counter = 0;
 /* USER CODE END 0 */
 
 /**
@@ -105,6 +104,7 @@ int main(void)
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, RESET);		//V2
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, RESET);		//X2
 
+  int counter = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -112,8 +112,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise3();
-
+	  Exercise4(counter);
+	  counter++;
+	  if(counter >= 10) counter = 0;
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
