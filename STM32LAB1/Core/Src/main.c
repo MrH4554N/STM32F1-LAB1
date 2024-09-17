@@ -30,6 +30,7 @@
 #include "Ex6.h"
 #include "Ex7.h"
 #include "Ex8.h"
+#include "Ex9.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -119,7 +120,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise8(num);
+	  Exercise9(num);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
