@@ -116,9 +116,9 @@ int main(void)
 
   int num = 0;
 
-  int hour = 0;
-  int minute = 0;
-  int second = 0;
+  int hour = 1;
+  int minute = 3;
+  int second = 15;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -126,9 +126,31 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  Exercise10(hour, minute, second);
-	  HAL_Delay(1000);
+
+
     /* USER CODE BEGIN 3 */
+	  second++;
+	  	Exercise9((second - 5) / 5);
+
+	  	if(second >= 60){
+	  		Exercise9(minute / 5);
+	  		minute++;
+	  		second = 0;
+	  	}
+	  	Exercise8(second / 5);
+	  	if(minute >= 60){
+	  		Exercise9(hour);
+	  		hour++;
+	  		minute = 0;
+	  	}
+	  	Exercise8(minute / 5);
+	  	if(hour >= 12){
+	  		hour = minute = second = 0;
+	  		Exercise7();
+	  		Exercise8(0);
+	  	}
+	  	Exercise8(hour);
+	  	HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }

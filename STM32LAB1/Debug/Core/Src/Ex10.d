@@ -21,7 +21,7 @@ Core/Src/Ex10.o: ../Core/Src/Ex10.c ../Core/Src/Ex6.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Core/Src/Ex7.h ../Core/Src/Ex8.h ../Core/Src/Ex9.h
+ ../Core/Src/Ex7.h ../Core/Src/Ex8.h ../Core/Src/Ex9.h ../Core/Src/Ex10.h
 
 ../Core/Src/Ex6.h:
 
@@ -74,3 +74,5 @@ Core/Src/Ex10.o: ../Core/Src/Ex10.c ../Core/Src/Ex6.h \
 ../Core/Src/Ex8.h:
 
 ../Core/Src/Ex9.h:
+
+../Core/Src/Ex10.h:
